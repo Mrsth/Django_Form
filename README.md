@@ -26,6 +26,7 @@
   <p>
     When the user loggs in then, the session of the user is created and the user can access the dashboard if s/he is a valid user or if s/he has been registered.
     E.g: Setting the session: request.session['user'] = 'value'
+  </p>
     
     Now before user can access the dashboard, the system will check if the session of the user is created or not.
     E.g: def dash_handler(request):
@@ -39,5 +40,4 @@
         
      When user loggs out then the session of the user is deleted.
      E.g: del request.session['user']
-  </p> 
 </div>
