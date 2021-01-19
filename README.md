@@ -25,11 +25,11 @@
   <b>How session is used?</b>
   <p>
     When the user loggs in then, the session of the user is created and the user can access the dashboard if s/he is a valid user or if s/he has been registered.
-    E.g: Setting the session: request.session['user'] = 'value'
-  </p>
-    
+    E.g: Setting the session: request.session['user'] = 'value'.
     Now before user can access the dashboard, the system will check if the session of the user is created or not.
     E.g: def dash_handler(request):
+   </p> 
+   
     try:
         x = request.session['user']
         if x != None:
